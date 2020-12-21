@@ -1,0 +1,71 @@
+.inputContainer {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.inputContainer + .inputContainer {
+	margin: 20px 0;
+}
+
+.inputContainer label {
+	font-size: 16px;
+	text-transform: capitalize;
+	flex-basis: 25%;
+	min-width: 100px;
+	color: #f1f1f1;
+	padding-top: 2px;
+}
+
+.inputContainer .inputWrapper {
+	align-self: flex-end;
+	justify-self: flex-end;
+	flex-basis: 75%;
+}
+
+.inputWrapper input,
+.inputWrapper select,
+.inputWrapper select option {
+	background: #17213f;
+	color: #f1f1f1;
+	font-size: 16px;
+	border: 0;
+	outline: 0;
+}
+
+.inputWrapper select {
+	border: 1px solid #f1f1f1;
+	border-radius: 3px;
+}
+
+.inputWrapper select option:first-child {
+	display: none;
+}
+
+.inputWrapper input,
+.inputWrapper select {
+	width: 100%;
+}
+.inputWrapper input[type=text] {
+	text-transform: capitalize;
+	border-bottom: 1px solid #f1f1f1;
+	transition: border-color 0.1s ease;
+}
+
+.inputWrapper input.redBorder {
+	border-color: red;
+}
+
+.inputWrapper p {
+	width: 100%;
+	height: 20px;
+	font-size: 13px;
+	color: red;
+	margin-top: 10px;
+	opacity: 0;
+	transition: opacity 0.1s ease;
+}
+
+.inputWrapper p.showError {
+	opacity: 1;
+}
